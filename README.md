@@ -10,10 +10,10 @@ Funcionalidades
 Como compilar
 
 Windows:
-gcc "super trunfo.c" -o trunfo.exe
+gcc super_trunfo.c -o trunfo.exe
 
 Linux/macOS:
-gcc "super trunfo.c" -o trunfo
+gcc super_trunfo.c -o trunfo
 
 Como executar
 
@@ -30,7 +30,7 @@ Requisitos
 
 Estrutura
 
-- super trunfo.c — código-fonte principal
+- super_trunfo.c — código-fonte principal
 
 Autor
 
