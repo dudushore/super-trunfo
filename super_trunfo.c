@@ -45,7 +45,7 @@ int main() {
     printf("Super Trunfo: %.2lf\n", super_trunfo);
 
 
-
+    
     printf("\n\nAgora, vamos criar uma segunda carta com os mesmos dados.\n");
 
     unsigned long int population2;
@@ -90,26 +90,17 @@ int main() {
     printf("Densidade populacional: %.2lf hab/km²\n", density2);
     printf("PIB per capita: %.2lf\n", pib_per_capita2);
     printf("Super Trunfo: %.2lf\n", super_trunfo2);
+    
 
+    
+    printf("\nCarta 1 - %s (%s): %lu\n", city, state, population);
+    printf("Carta 2 - %s (%s): %lu\n", city2, state2, population2);
 
-
-
-    int resultado_pop = population > population2;
-    int resultado_area = area > area2;
-    int resultado_pib = pib > pib2;
-    int resultado_points = points > points2;
-    int resultado_density = density > density2;
-    int resultado_pib_per_capita = pib_per_capita > pib_per_capita2;
-    int resultado_super_trunfo = super_trunfo > super_trunfo2;
-
-
-    printf("\n\nResultado População: %d\n", resultado_pop);
-    printf("Resultado Área: %d\n", resultado_area);
-    printf("Resultado PIB: %d\n", resultado_pib);
-    printf("Resultado Pontos Turísticos: %d\n", resultado_points);
-    printf("Resultado Densidade: %d\n", resultado_density);
-    printf("Resultado PIB per capita: %d\n", resultado_pib_per_capita);
-    printf("Resultado Super Trunfo: %d\n", resultado_super_trunfo);
+    if (population > population2) {
+        printf("Carta 1 é a vencedora!\n");
+    } else {
+        printf("Carta 2 é a vencedora!\n");
+    }
 
 
     return 0;
