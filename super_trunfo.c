@@ -10,22 +10,18 @@ int main() {
     char state2[50], code2[50], city2[50];
 
     printf("Digite os dados da Carta 1:\n");
-    printf("Estado: "); scanf(" %[^
-]", state1);
+    printf("Estado: "); scanf(" %[^\n]", state1);
     printf("Código: "); scanf("%s", code1);
-    printf("Cidade: "); scanf(" %[^
-]", city1);
+    printf("Cidade: "); scanf(" %[^\n]", city1);
     printf("População: "); scanf("%lu", &population1);
     printf("Área: "); scanf("%lf", &area1);
     printf("PIB: "); scanf("%lf", &pib1);
     printf("Pontos turísticos: "); scanf("%u", &points1);
 
     printf("\nDigite os dados da Carta 2:\n");
-    printf("Estado: "); scanf(" %[^
-]", state2);
+    printf("Estado: "); scanf(" %[^\n]", state2);
     printf("Código: "); scanf("%s", code2);
-    printf("Cidade: "); scanf(" %[^
-]", city2);
+    printf("Cidade: "); scanf(" %[^\n]", city2);
     printf("População: "); scanf("%lu", &population2);
     printf("Área: "); scanf("%lf", &area2);
     printf("PIB: "); scanf("%lf", &pib2);
