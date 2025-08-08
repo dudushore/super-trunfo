@@ -1,57 +1,51 @@
-# Super Trunfo de Cidades em C
+Jogo de Cartas - Batalha de Atributos
+Este repositório contém um jogo de cartas simples, escrito em C, que simula uma batalha de atributos. O programa compara duas "cartas", cada uma representando uma cidade com seus dados estatísticos, e determina qual delas vence em cada categoria.
 
-Programa em C para criação, exibição e comparação de duas cartas de cidades no estilo Super Trunfo.  
-O usuário informa os dados das cidades e escolhe **dois atributos numéricos diferentes** para comparar as cartas.
+Funcionalidades
+O programa permite ao usuário inserir dados para duas cartas, incluindo:
 
-## Funcionalidades
+Estado
 
-- Entrada de dados: estado, código, cidade, população, área, PIB, pontos turísticos
-- Cálculo automático de densidade populacional
-- Seleção de **dois atributos distintos** para comparação (via menu)
-- **Comparação**: cada atributo é comparado (maior vence, exceto densidade que vence o menor)
-- Soma dos dois atributos decide a rodada (quem tiver a maior soma vence)
-- Empate tratado caso as somas sejam iguais
-- Exibição clara dos atributos escolhidos, valores e resultado final
+Cidade
 
-## Como compilar
+Código
 
-**Windows:**
-```
+População (unsigned long int)
 
-gcc super\_trunfo.c -o trunfo.exe
+Área (double)
 
-```
-**Linux/macOS:**
-```
+PIB (double)
 
-gcc super\_trunfo.c -o trunfo
+Pontos turísticos (unsigned int)
 
-```
+A partir desses dados, o programa calcula e compara os seguintes atributos:
 
-## Como executar
+Densidade Populacional: População / Área.
 
-**Windows:**
-```
+PIB per Capita: PIB / População.
 
-./trunfo.exe
+Super Poder: A soma de todos os atributos numéricos.
 
-```
-**Linux/macOS:**
-```
+Regras do Jogo
+O programa compara as duas cartas com base nas seguintes regras:
 
-./trunfo
+Vencedor por maior valor: Para População, Área, PIB, Pontos Turísticos, PIB per Capita e Super Poder, a carta com o maior valor vence.
 
-```
+Vencedor por menor valor: Para a Densidade Populacional, a carta com o menor valor vence.
 
-## Requisitos
+O resultado de cada comparação é exibido como 1 (Carta 1 venceu) ou 0 (Carta 2 venceu ou houve empate).
 
-- GCC ou outro compilador C compatível
-- Terminal de comando
+Como Compilar e Executar
+Salve o código em um arquivo com a extensão .c (por exemplo, batalha_cartas.c).
 
-## Estrutura
+Use um compilador C (como GCC) para compilar o arquivo. Abra o terminal e execute:
 
-- `super_trunfo.c` — código-fonte principal
+Bash
 
-## Autor
+gcc batalha_cartas.c -o batalha_cartas
+Execute o programa compilado:
 
-Eduardo
+Bash
+
+./batalha_cartas
+Siga as instruções na tela para inserir os dados das duas cartas.
